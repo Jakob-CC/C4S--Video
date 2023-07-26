@@ -1,0 +1,8 @@
+.content img {
+    width: 40vw;
+    height: auto;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
