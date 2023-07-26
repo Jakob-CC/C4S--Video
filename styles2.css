@@ -1,8 +1,152 @@
-.content img {
+/* 
+These are the actual visual design decisions
+
+*/
+
+/* ESSKA Logo */
+.video-overlay img {
     width: 40vw;
+    max-width: calc(10px + 40vh);
     height: auto;
+    padding-bottom: 20px;
 }
 
 h1, h2 {
     text-transform: uppercase;
+    padding: 0;
+    margin: 5px 0 5px 0;
+    
+    font-variant-numeric:               lining-nums;
+    -moz-font-feature-settings:     "lnum";
+    -webkit-font-feature-settings:  "lnum";
+    font-feature-settings:          "lnum";
+}
+
+h2 {
+    font-weight: 900;
+    letter-spacing: 5.6px;
+}
+
+/* Landing Section Logo Typography */
+
+.title-cfs {
+    display: block;
+    text-align: center;
+}
+
+.title-cfs h1 {
+    display: inline-block;
+    border: 4px solid white;
+    border-left: 0;
+    border-right: 0; 
+    padding: 8px 0 9px 0;
+
+    font-size:xx-large;
+}
+
+.title-cfs h2 {
+    /* margin-left: 5px; */
+    padding-left: 4px;
+}
+
+.title-cfs h1 sup {
+    font-size:medium;
+    margin-left: 1px;
+    font-weight: 900;
+}
+
+
+/* ################################# */
+
+.scroll-down-section {
+    min-height: 100vh;
+    height: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    /* Center vertically */
+    /* justify-content: center; */
+    /* Center horizontally */
+    /* align-items: center; */
+    text-align: left;
+
+    padding: 1em;
+
+    color: white;
+    background: rgba(0,0,0,0.8); 
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.85);
+}
+
+.scroll-down-section p {
+    text-align: left;
+}
+
+
+
+
+/* Table */
+
+
+
+.scroll-down-section table {
+    padding: 0px 0 40px 0;
+    border-collapse: collapse;
+    line-height: 1.5;
+    table-layout: auto;
+    width: 1px; 
+    
+}
+
+.scroll-down-section table th {
+    font-size: x-small;
+    white-space: nowrap;
+    padding-right: 25px;
+}
+
+.scroll-down-section table tr td:nth-child(2), 
+.scroll-down-section table tr th:nth-child(2) {
+    text-align: center;
+}
+
+.scroll-down-section table tr td:nth-child(2){
+    font-size:smaller;
+    font-weight: 900;
+}
+
+.scroll-down-section td{
+    vertical-align: baseline;
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.scroll-down-section tr:first-child th {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 6px;
+}
+
+/* Space beneath borderline to table head */
+.scroll-down-section tr:nth-child(2) td {
+    padding-top: 10px;
+}
+
+/* Make the last row bigger */
+.scroll-down-section tr th:nth-last-child(1) {
+    min-width: 50vw;
+}
+
+
+.scroll-down-section span{
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 200px;
+    font-variant-numeric: tabular-nums;
+}
+
+.scroll-down-section span:first-child{
+    font-weight: 800;
+}
+
+
+.scroll-down-section span:nth-child(3){
+    color: rgba(255, 255, 255, 0.5);
 }

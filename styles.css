@@ -1,7 +1,23 @@
-body, html {
-    height: 100%;
+/* 
+Video in background
+Logo on top
+
+This is the Code for the full window background video and logo on top
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* Center vertically */
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+section {
+    height: 96vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 #video-container {
@@ -41,20 +57,20 @@ body, html {
     object-position: center;
 }
 
-.content {
+.video-overlay {
     position: relative;
     z-index: 100;
     color: white;
     text-align: center;
-    top: 40%;
-    transform: translateY(-50%);
+    top: 10%;
 }
+
 
 @media screen and (max-device-width: 800px) {
     #video-container, #bgvid {
         display: none;
     }
-    body {
+    section {
         background: url('mobile-image.jpg') no-repeat;
         background-size: cover;
     }
