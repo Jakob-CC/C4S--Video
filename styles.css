@@ -15,9 +15,13 @@ body {
 }
 
 section {
-    height: 96vh;
     margin: 0;
     text-align: center;
+}
+
+.video-section {
+    height: 96vh;
+
 }
 
 #video-container {

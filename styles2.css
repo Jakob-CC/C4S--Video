@@ -3,6 +3,43 @@ These are the actual visual design decisions
 
 */
 
+/* Reset */
+body {
+    margin: 0;
+}
+
+section {
+    margin-bottom: calc(1vh + 1vw);
+}
+
+article {
+    padding-bottom:5vh;
+}
+
+section article:last-child {
+    padding-bottom: 1vh;
+}
+
+a {
+    text-decoration: none;
+    font-variant-numeric: lining-nums;
+    color: #ec442a;
+}
+
+a:hover {
+    color: #ea8f4b;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #c9a189;
+
+}
+
+img {
+    max-width: 100%;
+}
+
 /* ESSKA Logo */
 .video-overlay img {
     width: 40vw;
@@ -11,8 +48,7 @@ These are the actual visual design decisions
     padding-bottom: 20px;
 }
 
-h1, h2 {
-    text-transform: uppercase;
+.video-overlay h1, h2 {
     padding: 0;
     margin: 5px 0 5px 0;
     
@@ -22,9 +58,33 @@ h1, h2 {
     font-feature-settings:          "lnum";
 }
 
-h2 {
+
+.video-overlay h2 {
     font-weight: 900;
     letter-spacing: 5.6px;
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255,0.5);
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: larger;
 }
 
 /* Landing Section Logo Typography */
@@ -58,10 +118,13 @@ h2 {
 
 /* ################################# */
 
+
 .scroll-down-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     height: auto;
-    max-width: 1200px;
+    width: auto;
+    margin: 0;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     /* Center vertically */
@@ -70,58 +133,64 @@ h2 {
     /* align-items: center; */
     text-align: left;
 
-    padding: 1em;
+    padding: calc(1.3vw + 0.5vh) calc(2vw + 8px);
 
     color: white;
     background: rgba(0,0,0,0.8); 
+    background: rgba(77, 38, 26, 0.8); 
     border-radius: 6px;
-    border: 1px solid rgba(0,0,0,0.85);
 }
 
 .scroll-down-section p {
     text-align: left;
 }
 
-
+.table-wrap {
+    overflow: hidden;
+    padding: 20px 0;
+}
 
 
 /* Table */
-
-
-
 .scroll-down-section table {
-    padding: 0px 0 40px 0;
     border-collapse: collapse;
     line-height: 1.5;
     table-layout: auto;
     width: 1px; 
-    
 }
 
+/* Table head */
 .scroll-down-section table th {
     font-size: x-small;
     white-space: nowrap;
-    padding-right: 25px;
 }
-
 .scroll-down-section table tr td:nth-child(2), 
 .scroll-down-section table tr th:nth-child(2) {
     text-align: center;
+    padding-left:12px;
+    padding-right:12px;
 }
 
+/* Second column */
 .scroll-down-section table tr td:nth-child(2){
-    font-size:smaller;
+    font-size:larger;
     font-weight: 900;
 }
+.scroll-down-section table tr:nth-child(2) td:nth-child(2),
+.scroll-down-section table tr:nth-child(9) td:nth-child(2) {
+    font-size:smaller;
+}
 
+/* Align Text to top of cell */
 .scroll-down-section td{
     vertical-align: baseline;
     padding-bottom: 20px; /* Adjust as needed */
 }
 
-.scroll-down-section tr:first-child th {
+.scroll-down-section tr:first-child th,
+.scroll-down-section tr:last-child td {
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    padding-bottom: 6px;
+    padding-bottom: 12px;
 }
 
 /* Space beneath borderline to table head */
@@ -129,24 +198,67 @@ h2 {
     padding-top: 10px;
 }
 
-/* Make the last row bigger */
+/* Make the last column wider */
 .scroll-down-section tr th:nth-last-child(1) {
-    min-width: 50vw;
+    width: auto;
+    min-width: 60vw;
 }
 
-
+/* Make tables great again */
 .scroll-down-section span{
     display: inline-block;
     white-space: nowrap;
-    min-width: 200px;
+    min-width: 180px;
     font-variant-numeric: tabular-nums;
 }
 
+/* City to city */
 .scroll-down-section span:first-child{
     font-weight: 800;
 }
 
+/* First data row adjustments */
+.scroll-down-section tr:nth-child(2) span:first-child{
+    font-weight: 600;
+    min-width: 160px;
+}
+.scroll-down-section tr:nth-child(2) span:nth-child(2) {
+    min-width: 203px;
+    font-weight: 600;
+}
 
+/* Grey Last row */
 .scroll-down-section span:nth-child(3){
     color: rgba(255, 255, 255, 0.5);
+}
+
+.scroll-down-section table i {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: smaller;
+    font-style: normal;
+}
+
+.button {
+    display: inline-block;
+    background-color: #B54905;
+    color: white;
+    
+    padding: 10px 18px 11px 18px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+.button:hover {
+
+    background-color: #ec442a;
+    color: white;
+}
+
+.imprint {
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-small;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 5px;
 }
