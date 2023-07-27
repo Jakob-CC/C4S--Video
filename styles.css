@@ -69,13 +69,3 @@ section {
     top: 10%;
 }
 
-
-@media screen and (max-device-width: 800px) {
-    #video-container, #bgvid {
-        display: none;
-    }
-    section {
-        background: url('mobile-image.jpg') no-repeat;
-        background-size: cover;
-    }
-}
