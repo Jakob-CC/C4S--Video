@@ -14,11 +14,14 @@ section {
 
 article {
     padding-bottom:5vh;
+    max-width: 90vw;
 }
 
 section article:last-child {
     padding-bottom: 1vh;
 }
+
+
 
 a {
     text-decoration: none;
@@ -38,6 +41,29 @@ a:visited {
 
 img {
     max-width: 100%;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255,0.5);
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: larger;
+    
 }
 
 /* ESSKA Logo */
@@ -64,28 +90,6 @@ img {
     letter-spacing: 5.6px;
 }
 
-
-h1, h2 {
-    text-transform: uppercase;
-    margin: 0;
-}
-
-h1 {
-    font-size: xx-large;
-}
-
-h6 {
-    margin: 0;
-    padding: 0;
-    color: rgba(255,255,255,0.5);
-    font-weight: 200;
-    letter-spacing: 1px;
-}
-
-p {
-    line-height: 1.6;
-    font-size: larger;
-}
 
 /* Landing Section Logo Typography */
 
@@ -120,25 +124,26 @@ p {
 
 
 .scroll-down-section {
-    /* min-height: 100vh; */
+    min-height: 100vh;
     height: auto;
     width: auto;
-    margin: 0;
     max-width: 800px;
     display: flex;
     flex-direction: column;
     /* Center vertically */
-    /* justify-content: center; */
+    justify-content: center;
     /* Center horizontally */
-    /* align-items: center; */
+    align-items: center;
     text-align: left;
-
+    
+    margin: 0px;
     padding: calc(1.3vw + 0.5vh) calc(2vw + 8px);
+    border-radius: 6px;
 
     color: white;
-    background: rgba(0,0,0,0.8); 
-    background: rgba(77, 38, 26, 0.8); 
-    border-radius: 6px;
+    /* background: rgba(0,0,0,0.8); */
+    /* background: rgba(77, 38, 26, 0.8); */
+    background: rgba(35, 15, 9, 0.8);
 }
 
 .scroll-down-section p {
@@ -262,3 +267,17 @@ p {
     display: inline-block;
     padding: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    .scroll-down-section {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .video-overlay img {
+        width: 70vw;
+        max-width: 90vw;
+    }
+}
+
