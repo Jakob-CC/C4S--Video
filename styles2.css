@@ -46,6 +46,12 @@ img {
 h1, h2 {
     text-transform: uppercase;
     margin: 0;
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: x-large;
 }
 
 h1 {
@@ -54,7 +60,7 @@ h1 {
 
 h6 {
     margin: 0;
-    padding: 0;
+    padding: 2px 0;
     color: rgba(255,255,255,0.5);
     font-weight: 200;
     letter-spacing: 1px;
@@ -72,6 +78,7 @@ p {
     max-width: calc(10px + 40vh);
     height: auto;
     padding-bottom: 20px;
+    display:inline;
 }
 
 .video-overlay h1, h2 {
@@ -84,8 +91,13 @@ p {
     font-feature-settings:          "lnum";
 }
 
+.video-overlay h1 {
+    font-weight: 700;
+}
+
 
 .video-overlay h2 {
+    font-size: 24px;
     font-weight: 900;
     letter-spacing: 5.6px;
 }
@@ -252,7 +264,7 @@ p {
     display: inline-block;
     background-color: #B54905;
     color: white;
-    
+    margin: 20px 0;
     padding: 10px 18px 11px 18px;
     border-radius: 8px;
     font-weight: 800;

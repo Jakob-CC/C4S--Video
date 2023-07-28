@@ -9,13 +9,12 @@ This is the Code for the full window background video and logo on top
 @tailwind components;
 @tailwind utilities;
 
-body {
+.content {
     display: flex;
     flex-direction: column;
     /* Center vertically */
     /* justify-content: center; */
     align-items: center;
-    
 }
 
 section {
@@ -66,7 +65,7 @@ section {
 
 .video-overlay {
     position: relative;
-    z-index: 100;
+    z-index: 10;
     color: white;
     text-align: center;
     top: 10%;
