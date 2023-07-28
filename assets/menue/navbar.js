@@ -1,6 +1,10 @@
-let navMenu = document.querySelector('.nav-menu');
-let hamburger = document.querySelector('.hamburger');
-
-hamburger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'none' ? 'flex' : 'none';
-});
+document.addEventListener("DOMContentLoaded", function() {
+    var burgerMenu = document.querySelector(".burger-menu");
+    var navMenu = document.querySelector(".nav-menu");
+  
+    burgerMenu.addEventListener("click", function() {
+      this.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+  });
+  

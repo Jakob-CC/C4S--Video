@@ -3,18 +3,21 @@
 }
 
 .nav-menu {
+    position: fixed;
+    top: 30px;
+    right: 30px;
     list-style-type: none;
     margin: 0;
     padding: 1em;
-    overflow: hidden;
-    /* background-color: #333; */
-    display: flex;
-    justify-content: flex-end; /* Aligns the items to the right */
+    background-color: #333;
+    display: none;  /* Make the nav-menu not visible by default */
+    flex-direction: column;
 }
 
 .nav-menu .nav-item {
+    background-color: aquamarine;
     float: left;
-    padding: 10px;  /* Adjust as needed */
+    padding: 10px;  
 }
 
 .nav-menu .nav-item a {
@@ -46,18 +49,24 @@
     position: fixed;
     right: 30px;
     top: 30px;
-
 }
 
 @media screen and (max-width: 600px) {
     .nav-menu .nav-item { 
-        display: none; 
+        display: block; /* Show menu items in mobile view */
     }
     .hamburger { 
-        display: block; 
+        display: block; /* Show hamburger icon in mobile view */
     }
-    .nav-menu {
-        flex-direction: column;
-        display: none;
-    }
+}
+
+
+.burger-menu.active {
+    /* Styles when burger menu is active. */
+    
+}
+
+.nav-menu.active {
+    /* Styles when nav menu is active. */
+    display: flex; /* Make the nav-menu visible when it's active */
 }
