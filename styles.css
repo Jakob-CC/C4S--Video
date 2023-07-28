@@ -5,6 +5,10 @@ Logo on top
 This is the Code for the full window background video and logo on top
 */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     display: flex;
     flex-direction: column;
