@@ -276,6 +276,10 @@ p {
     color: white;
 }
 
+.button:visited {
+    color: white;
+}
+
 .imprint {
     color: white;
     text-transform: uppercase;

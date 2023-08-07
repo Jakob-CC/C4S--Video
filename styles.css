@@ -9,6 +9,10 @@ This is the Code for the full window background video and logo on top
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .content {
     display: flex;
     flex-direction: column;
