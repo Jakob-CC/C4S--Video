@@ -34,7 +34,7 @@ section {
     left: 0;
     overflow: hidden;
     z-index: -100;
-    background: url('fallback.jpg') no-repeat;
+    background: black;
     background-size: cover;
 }
 
