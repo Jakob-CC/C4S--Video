@@ -1,1 +1,4 @@
+
+starting tailwind
+Terminal:   ctrl ö
 npx tailwindcss -i ./styles.css -o ./dist/output.css --watch

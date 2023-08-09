@@ -235,7 +235,6 @@ p {
 }
 .scroll-down-section tr:nth-child(2) span:nth-child(2) {
     font-weight: 600;
-    /* color: blue; */
     min-width: 192px;
     text-align: left;
 }
@@ -249,7 +248,6 @@ p {
 /* row with numbers */
 .scroll-down-section span:nth-child(2){
     min-width: 60px;
-    /* color: yellow; */
     text-align: right;
 }
 
@@ -258,7 +256,6 @@ p {
 .scroll-down-section span:nth-child(3){
     min-width: 130px;
     text-align: right;
-    /* color: red; */
     padding-right: 15px;
 }
 /* Grey Last row */
