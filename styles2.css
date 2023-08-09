@@ -178,7 +178,6 @@ p {
     border-collapse: collapse;
     line-height: 1.5;
     table-layout: auto;
-    width: 1px; 
 }
 
 /* Table head */
@@ -188,16 +187,17 @@ p {
 }
 .scroll-down-section table tr td:nth-child(2), 
 .scroll-down-section table tr th:nth-child(2) {
-    text-align: center;
-    padding-left:12px;
-    padding-right:12px;
+    text-align:     center;
+    padding-left:   12px;
+    padding-right:  12px;
 }
 
 /* Second column */
 .scroll-down-section table tr td:nth-child(2){
-    font-size:larger;
-    font-weight: 900;
+    font-size:      larger;
+    font-weight:    900;
 }
+/* make word "Arrival" and "Finale" smaller */
 .scroll-down-section table tr:nth-child(2) td:nth-child(2),
 .scroll-down-section table tr:nth-child(9) td:nth-child(2) {
     font-size:smaller;
@@ -220,38 +220,54 @@ p {
     padding-top: 10px;
 }
 
-/* Make the last column wider */
-.scroll-down-section tr th:nth-last-child(1) {
-    width: auto;
-    min-width: 60vw;
-}
-
 /* Make tables great again */
 .scroll-down-section span{
     display: inline-block;
     white-space: nowrap;
-    min-width: 180px;
+    min-width: 140px;
     font-variant-numeric: tabular-nums;
 }
 
-/* City to city */
-.scroll-down-section span:first-child{
-    font-weight: 800;
-}
 
 /* First data row adjustments */
 .scroll-down-section tr:nth-child(2) span:first-child{
     font-weight: 600;
-    min-width: 160px;
 }
 .scroll-down-section tr:nth-child(2) span:nth-child(2) {
-    min-width: 203px;
     font-weight: 600;
+    /* color: blue; */
+    min-width: 192px;
+    text-align: left;
 }
 
-/* Grey Last row */
+/* City to city */
+.scroll-down-section span:first-child{
+    width: 200px;
+    font-weight: 800;
+}
+
+/* row with numbers */
+.scroll-down-section span:nth-child(2){
+    min-width: 60px;
+    /* color: yellow; */
+    text-align: right;
+}
+
+
+/* row with numbers */
 .scroll-down-section span:nth-child(3){
+    min-width: 130px;
+    text-align: right;
+    /* color: red; */
+    padding-right: 15px;
+}
+/* Grey Last row */
+.scroll-down-section span:nth-child(4),
+.scroll-down-section tr:nth-child(2) span:nth-child(3)
+{
     color: rgba(255, 255, 255, 0.5);
+    min-width: 120px;
+    text-align: left;
 }
 
 .scroll-down-section table i {
@@ -259,6 +275,12 @@ p {
     font-size: smaller;
     font-style: normal;
 }
+
+
+
+
+
+
 
 .button {
     display: inline-block;
@@ -300,4 +322,6 @@ p {
         width: 70vw;
         max-width: 90vw;
     }
+    
 }
+
